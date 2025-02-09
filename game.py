@@ -35,7 +35,8 @@ def snowman(snowman_word):
             letter_statuses_dict[user_input] = True
             # check is_word_guessed, if yes, player wins, print message, exit;
             if is_word_guessed(snowman_word, letter_statuses_dict):
-                print("Congratulations, you win!")              
+                print("Congratulations, you win!")   
+                return
         # else: add to wrong guesses list;
         else: 
             wrong_guesses_list.append(user_input)
